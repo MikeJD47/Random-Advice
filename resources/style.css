@@ -86,8 +86,9 @@ button {
   text-align: center;
 }
 
-button:hover {
+button:active {
   box-shadow: 0px 0px 30px 10px hsla(150, 100%, 66%, 0.5);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 545px) {
@@ -105,14 +106,6 @@ button:hover {
 
   .devider.desktop {
     display: none;
-  }
-
-  button:active {
-    box-shadow: 0px 0px 30px 10px hsla(150, 100%, 66%, 0.5);
-  }
-
-  button:hover {
-    box-shadow: none;
   }
 }
 
