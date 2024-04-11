@@ -106,6 +106,14 @@ button:hover {
   .devider.desktop {
     display: none;
   }
+
+  button:active {
+    box-shadow: 0px 0px 30px 10px hsla(150, 100%, 66%, 0.5);
+  }
+
+  button:hover {
+    box-shadow: none;
+  }
 }
 
 /* .line {
