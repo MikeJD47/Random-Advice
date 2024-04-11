@@ -1,0 +1,139 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-blue);
+  font-family: "Manrope";
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  height: 325px;
+  background-color: var(--dark-grayish-blue);
+  /* overflow: hidden; */
+  border-radius: 20px;
+  z-index: 1;
+  margin: 0 20px;
+}
+
+.advice-num {
+  color: var(--neon-green);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-top: 2.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.advice {
+  height: auto;
+  width: auto;
+  margin: 0;
+  color: var(--light-cyan);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.devider {
+  /* padding-top: 20px; */
+  width: 80%;
+  height: auto;
+}
+
+.devider.mobile {
+  display: none;
+}
+
+button {
+  position: absolute;
+  display: block;
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  z-index: 2;
+  bottom: -30px;
+  text-align: center;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px 10px hsla(150, 100%, 66%, 0.5);
+}
+
+@media screen and (max-width: 545px) {
+  #container {
+    width: 350px;
+  }
+
+  .advice {
+    font-size: 1.4rem;
+  }
+
+  .devider.mobile {
+    display: block;
+  }
+
+  .devider.desktop {
+    display: none;
+  }
+}
+
+/* .line {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.line span {
+  background-color: var(--dark-grayish-blue);
+  padding: 0 10px;
+  z-index: 2;
+  color: var(--light-cyan);
+  font-weight: 900;
+}
+
+.line:after {
+  content: "";
+  position: absolute;
+  background-color: var(--grayish-blue);
+  height: 1px;
+  width: 80%;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;
+} */
