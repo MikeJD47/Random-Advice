@@ -28,6 +28,7 @@ body {
   width: 100vw;
   background-color: var(--dark-blue);
   font-family: "Manrope";
+  margin: auto;
 }
 
 #container {
@@ -98,6 +99,7 @@ button:active {
 
   .advice {
     font-size: 1.4rem;
+    padding: 1rem 1.5rem;
   }
 
   .devider.mobile {
